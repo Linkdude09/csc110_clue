@@ -5,6 +5,8 @@ import java.io.IOException;
 import Interfaces.Consoleio;
 
 public class ClueGame {
+	
+	int NumofPlayer = 0;
 
 	public static void main(String[] args) {
 		
@@ -13,7 +15,8 @@ public class ClueGame {
 	}
 	
 	public void setup() throws IOException {
-		int NumofPlayer = Consoleio.promptForInt("How many people are playing?", 2, 6);
+		NumofPlayer = Consoleio.promptForInt("How many people are playing?", 2, 6);
+		
 	}
 
 }
