@@ -2,16 +2,38 @@ package csc110_clue;
 
 public class Card {
 	
-	String name;
+	private String name;
 	
-	CardTypes type;
+	private CardTypes type;
 	
-	boolean isSuspect;
+	private boolean isSuspect;
+	
+	
 	
 	Card(String name, CardTypes type) {
 		this.name = name;
 		this.type = type;
 		this.isSuspect = true;
 	}
+
+	public CardTypes getType() {
+		return type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public boolean isSuspect() {
+		return isSuspect;
+	}
+
+	public void setSuspect(boolean isSuspect) {
+		if(!this.isSuspect) {
+			throw new IllegalArgumentException(this.name + " is already exonerated, you cant reopen the case on them!!!");
+		}
+		this.isSuspect = isSuspect;
+	}
+
 
 }
