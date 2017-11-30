@@ -2,7 +2,7 @@ package csc110_clue;
 
 public enum Square {
 
-	W, // wall
+	X, // wall
 	d, // door
 	H, // hall
 	L, // lounge

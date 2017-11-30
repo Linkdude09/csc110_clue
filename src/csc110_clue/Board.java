@@ -50,7 +50,7 @@ public class Board {
 	private static Square[][] setMiddle(Square[][] mid) {
 		for(int i = 8; i < 15; i++) {
 			for(int j = 9; j < 14; j++) {
-				mid[i][j] = Square.W;
+				mid[i][j] = Square.X;
 			}
 		}
 		return mid;
@@ -58,18 +58,18 @@ public class Board {
 
 	private static Square[][] setLibrary(Square[][] library) {
 		for(int i = 0; i < 6; i++) {
-			library[6][i] = Square.W;
+			library[6][i] = Square.X;
 		}
-		library[7][5] = Square.W;
+		library[7][5] = Square.X;
 		for(int i = 7; i < 10; i++) {
-			library[i][6] = Square.W;
+			library[i][6] = Square.X;
 		}
-		library[9][5] = Square.W;
+		library[9][5] = Square.X;
 		for(int i = 0; i < 6; i++) {
-			library[10][i] = Square.W;
+			library[10][i] = Square.X;
 		}
 		for(int i = 7; i < 10; i++) {
-			library[i][0] = Square.W;
+			library[i][0] = Square.X;
 		}
 		for(int i = 7; i < 10; i++) {
 			for(int j = 1; j < 5; j++) {
@@ -84,16 +84,16 @@ public class Board {
 
 	private static Square[][] setBilliards(Square[][] bill) {
 		for(int i = 0; i < 6; i++) {
-			bill[12][i] = Square.W;
+			bill[12][i] = Square.X;
 		}
 		for(int i = 12; i < 17; i++) {
-			bill[i][5] = Square.W;
+			bill[i][5] = Square.X;
 		}
 		for(int i = 11; i < 18; i++) {
-			bill[i][0] = Square.W;
+			bill[i][0] = Square.X;
 		}
 		for(int i = 1; i < 6; i++) {
-			bill[16][i] = Square.W;
+			bill[16][i] = Square.X;
 		}
 		for(int i = 13; i < 16; i++) {
 			for(int j = 1; j < 5; j++) {
@@ -107,19 +107,19 @@ public class Board {
 
 	private static Square[][] setConservatory(Square[][] cons) {
 		for(int i = 0; i < 6; i++) {
-			cons[19][i] = Square.W;
+			cons[19][i] = Square.X;
 		}
 		for(int i = 20; i < 25; i++) {
-			cons[i][5] = Square.W;
+			cons[i][5] = Square.X;
 		}
 		for(int i = 20; i < 25; i++) {
-			cons[i][0] = Square.W;
+			cons[i][0] = Square.X;
 		}
 		for(int i = 1; i < 7; i++) {
-			cons[23][i] = Square.W;
+			cons[23][i] = Square.X;
 		}
 		for(int i = 1; i < 9; i++) {
-			cons[24][i] = Square.W;
+			cons[24][i] = Square.X;
 		}
 		for(int i = 20; i < 23; i++) {
 			for(int j = 1; j < 5; j++) {
@@ -132,20 +132,20 @@ public class Board {
 
 	private static Square[][] setBallroom(Square[][] ballroom) {
 		for(int i = 8; i < 16; i++) {
-			ballroom[17][i] = Square.W;
+			ballroom[17][i] = Square.X;
 		}
 		for(int i = 17; i < 23; i ++) {
-			ballroom[i][15] = Square.W;
+			ballroom[i][15] = Square.X;
 		}
 		for(int i = 17; i < 23; i++) {
-			ballroom[i][8] = Square.W;
+			ballroom[i][8] = Square.X;
 		}
 		for(int i = 8; i < 16; i++) {
-			ballroom[22][i] = Square.W;
+			ballroom[22][i] = Square.X;
 		}
 		for(int i = 23; i < 25; i++) {
 			for(int j = 10; j < 14; j++) {
-				ballroom[i][j] = Square.W;
+				ballroom[i][j] = Square.X;
 			}
 		}
 		for(int i = 18; i < 22; i++) {
@@ -167,19 +167,19 @@ public class Board {
 
 	private static Square[][] setKitchen(Square[][] kitchen) {
 		for(int i = 18; i < 24; i++) {
-			kitchen[18][i] = Square.W;
+			kitchen[18][i] = Square.X;
 		}
 		for(int i = 18; i < 25; i++) {
-			kitchen[i][18] = Square.W;
+			kitchen[i][18] = Square.X;
 		}
 		for(int i = 15; i < 24; i++) {
-			kitchen[24][i] = Square.W;
+			kitchen[24][i] = Square.X;
 		}
 		for(int i = 17; i < 24; i++) {
-			kitchen[23][i] = Square.W;
+			kitchen[23][i] = Square.X;
 		}
 		for(int i = 19; i < 23; i++) {
-			kitchen[i][23] = Square.W;
+			kitchen[i][23] = Square.X;
 		}
 		for(int i = 19; i < 23; i++) {
 			for(int j = 19; j < 23; j++) {
@@ -192,19 +192,19 @@ public class Board {
 
 	private static Square[][] setDining(Square[][] dining) {
 		for(int i = 16; i < 24; i++) {
-			dining[9][i] = Square.W;
+			dining[9][i] = Square.X;
 		}
 		for(int i = 9; i < 15; i++) {
-			dining[i][16] = Square.W;
+			dining[i][16] = Square.X;
 		}
 		for(int i = 16; i < 20; i++) {
-			dining[14][i] = Square.W;
+			dining[14][i] = Square.X;
 		}
 		for(int i = 19; i < 24; i++) {
-			dining[15][i] = Square.W;
+			dining[15][i] = Square.X;
 		}
 		for(int i = 8; i < 17; i++) {
-			dining[i][23] = Square.W;
+			dining[i][23] = Square.X;
 		}
 		for(int i = 10; i < 14; i++) {
 			for(int j = 17; j < 23; j++) {
@@ -221,16 +221,16 @@ public class Board {
 
 	private static Square[][] setLounge(Square[][] lounge) {
 		for(int i = 0; i < 6; i++) {
-			lounge[i][17] = Square.W;
+			lounge[i][17] = Square.X;
 		}
 		for(int i = 17; i < 24; i++) {
-			lounge[0][i] = Square.W;
+			lounge[0][i] = Square.X;
 		}
 		for(int i = 17; i < 24; i++) {
-			lounge[5][i] = Square.W;
+			lounge[5][i] = Square.X;
 		}
 		for(int i = 0; i < 7; i++) {
-			lounge[i][23] = Square.W;
+			lounge[i][23] = Square.X;
 		}
 		for(int i = 1; i < 5; i++) {
 			for(int j = 18; j < 23; j++) {
@@ -243,16 +243,16 @@ public class Board {
 
 	private static Square[][] setHall(Square[][] hall) {
 		for(int i = 8; i < 16; i++) {
-			hall[0][i] = Square.W;
+			hall[0][i] = Square.X;
 		}
 		for(int i = 0; i < 7; i++) {
-			hall[i][9] = Square.W;
+			hall[i][9] = Square.X;
 		}
 		for(int i = 9; i < 15; i++) {
-			hall[6][i] = Square.W;
+			hall[6][i] = Square.X;
 		}
 		for(int i = 1; i < 7; i++) {
-			hall[i][14] = Square.W;
+			hall[i][14] = Square.X;
 		}
 		for(int i = 1; i < 6; i++) {
 			for(int j = 10; j < 14; j++) {
@@ -275,16 +275,16 @@ public class Board {
 
 	private static Square[][] setStudy(Square[][] study) {
 		for(int i = 0; i < 7; i++) {
-			study[0][i] = Square.W;
+			study[0][i] = Square.X;
 		}
 		for(int i = 0; i < 5; i++) {
-			study[i][0] = Square.W;
+			study[i][0] = Square.X;
 		}
 		for(int i = 0; i < 7; i++) {
-			study[3][i] = Square.W;
+			study[3][i] = Square.X;
 		}
 		for(int i = 0; i < 4; i++) {
-			study[i][6] = Square.W;
+			study[i][6] = Square.X;
 		}
 		for(int i = 1; i < 3; i++) {
 			for(int j = 1; j < 6; j++) {
