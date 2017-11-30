@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class Game {
 
 	ArrayList<Card> Deck = new ArrayList<>();
+	private Card Suspect;
+	private Card Weapon;
+	private Card Room;
 
 	public void Run() {
 
@@ -26,14 +29,17 @@ public class Game {
 		Deck.add(new Card("Rope", CardTypes.Weapon));
 		Deck.add(new Card("Leadpipe", CardTypes.Weapon));
 		Deck.add(new Card("Knife", CardTypes.Weapon));
+		Deck.add(new Card("Wrench", CardTypes.Weapon));
+		Deck.add(new Card("Candlestick", CardTypes.Weapon));
+		Deck.add(new Card("Pistol", CardTypes.Weapon));
 	}
 
 	private void generateFile() {
 
 	}
-	
+
 	public void movement() {
-		
+
 	}
 
 }
