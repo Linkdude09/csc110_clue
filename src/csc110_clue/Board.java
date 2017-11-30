@@ -2,18 +2,18 @@ package csc110_clue;
 
 public class Board {
 	
-	private final static int BOARD_LENGTH = 25;
-	private final static int BOARD_WIDTH = 24;
+	public final static int BOARD_LENGTH = 25;
+	public final static int BOARD_WIDTH = 24;
 	
 	
-	public static void main(String[] args) {
+
 		
-		Square[][] board = null;
-		initializeBoard(board);
+		Square[][] board;
 
-	}
 
-	public static Square[][] initializeBoard(Square[][] input) {
+	
+
+	public Square[][] initializeBoard(Square[][] input) {
 		input = new Square[BOARD_LENGTH][BOARD_WIDTH];
 		input = startBoard(input);
 		input = setStudy(input);
@@ -37,7 +37,7 @@ public class Board {
 		
 	}
 
-	private static Square[][] setPLayers(Square[][] players) {
+	private Square[][] setPLayers(Square[][] players) {
 		players[0][16] = Square.s;
 		players[7][23] = Square.m;
 		players[5][0] = Square.p;
@@ -47,7 +47,7 @@ public class Board {
 		return players;
 	}
 
-	private static Square[][] setMiddle(Square[][] mid) {
+	private Square[][] setMiddle(Square[][] mid) {
 		for(int i = 8; i < 15; i++) {
 			for(int j = 9; j < 14; j++) {
 				mid[i][j] = Square.X;
@@ -56,7 +56,7 @@ public class Board {
 		return mid;
 	}
 
-	private static Square[][] setLibrary(Square[][] library) {
+	private Square[][] setLibrary(Square[][] library) {
 		for(int i = 0; i < 6; i++) {
 			library[6][i] = Square.X;
 		}
@@ -82,7 +82,7 @@ public class Board {
 		return library;
 	}
 
-	private static Square[][] setBilliards(Square[][] bill) {
+	private Square[][] setBilliards(Square[][] bill) {
 		for(int i = 0; i < 6; i++) {
 			bill[12][i] = Square.X;
 		}
@@ -105,7 +105,7 @@ public class Board {
 		return bill;
 	}
 
-	private static Square[][] setConservatory(Square[][] cons) {
+	private Square[][] setConservatory(Square[][] cons) {
 		for(int i = 0; i < 6; i++) {
 			cons[19][i] = Square.X;
 		}
@@ -130,7 +130,7 @@ public class Board {
 		return cons;
 	}
 
-	private static Square[][] setBallroom(Square[][] ballroom) {
+	private Square[][] setBallroom(Square[][] ballroom) {
 		for(int i = 8; i < 16; i++) {
 			ballroom[17][i] = Square.X;
 		}
@@ -165,7 +165,7 @@ public class Board {
 		return ballroom;
 	}
 
-	private static Square[][] setKitchen(Square[][] kitchen) {
+	private Square[][] setKitchen(Square[][] kitchen) {
 		for(int i = 18; i < 24; i++) {
 			kitchen[18][i] = Square.X;
 		}
@@ -190,7 +190,7 @@ public class Board {
 		return kitchen;
 	}
 
-	private static Square[][] setDining(Square[][] dining) {
+	private Square[][] setDining(Square[][] dining) {
 		for(int i = 16; i < 24; i++) {
 			dining[9][i] = Square.X;
 		}
@@ -219,7 +219,7 @@ public class Board {
 		return dining;
 	}
 
-	private static Square[][] setLounge(Square[][] lounge) {
+	private Square[][] setLounge(Square[][] lounge) {
 		for(int i = 0; i < 6; i++) {
 			lounge[i][17] = Square.X;
 		}
@@ -241,7 +241,7 @@ public class Board {
 		return lounge;
 	}
 
-	private static Square[][] setHall(Square[][] hall) {
+	private Square[][] setHall(Square[][] hall) {
 		for(int i = 8; i < 16; i++) {
 			hall[0][i] = Square.X;
 		}
@@ -264,7 +264,7 @@ public class Board {
 		return hall;
 	}
 
-	private static Square[][] startBoard(Square[][] input) {
+	private Square[][] startBoard(Square[][] input) {
 		for(int i = 0; i< 25; i++) {
 			for(int j = 0; j < 24; j++) {
 				input[i][j] = Square.O;
@@ -273,7 +273,7 @@ public class Board {
 		return input;
 	}
 
-	private static Square[][] setStudy(Square[][] study) {
+	private Square[][] setStudy(Square[][] study) {
 		for(int i = 0; i < 7; i++) {
 			study[0][i] = Square.X;
 		}

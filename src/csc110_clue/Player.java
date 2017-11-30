@@ -9,5 +9,7 @@ public class Player {
 	public DetectiveChecklist DCL = new DetectiveChecklist();
 	
 	ArrayList<Card> PlayerHand = new ArrayList<>();
+	
+	public int[][] position = new int[1][1];
 
 }
