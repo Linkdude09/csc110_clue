@@ -17,7 +17,7 @@ public enum Square {
 	s, // ms. scarlet
 	m, // mustard
 	p, // plum
-	w, // white
+	W, // white
 	g, // mr. green
 	P, // peacock
 }

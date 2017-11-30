@@ -41,7 +41,7 @@ public class Board {
 		players[0][16] = Square.s;
 		players[7][23] = Square.m;
 		players[5][0] = Square.p;
-		players[24][14] = Square.w;
+		players[24][14] = Square.W;
 		players[24][9] = Square.g;
 		players[18][0] = Square.P;
 		return players;
