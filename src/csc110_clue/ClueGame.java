@@ -1,23 +1,18 @@
 package csc110_clue;
 
 import java.io.IOException;
-
-import Interfaces.Consoleio;
+import java.util.ArrayList;
 
 public class ClueGame {
-	
-	int NumofPlayer = 0;
 
 	public static void main(String[] args) {
-		
+		Game g = new Game();
+		g.setup();
+		g.Run();
 		
 
 	}
 	
-	public void setup() throws IOException {
-		NumofPlayer = Consoleio.promptForInt("How many people are playing?", 2, 6);
-		
-	}
 
 }
 
