@@ -5,13 +5,12 @@ import java.util.ArrayList;
 public class Game {
 
 	ArrayList<Card> Deck = new ArrayList<>();
-<<<<<<< HEAD
+
 	private Card Suspect;
 	private Card Weapon;
 	private Card Room;
-=======
+
 	Board b = new Board();
->>>>>>> 7f776499b3d112116ac287851d88fccab5624716
 
 	public void Run() {
 
