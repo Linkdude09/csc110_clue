@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Game {
 
 	ArrayList<Card> Deck = new ArrayList<>();
+	Board b = new Board();
 
 	public void Run() {
 
@@ -13,6 +14,7 @@ public class Game {
 	public void setup() {
 		this.generateDeck();
 		this.generateFile();
+		b.initializeBoard(b.board);
 
 	}
 
