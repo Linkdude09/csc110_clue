@@ -11,7 +11,10 @@ public class Game {
 	private Card Room;
 
 	Board b = new Board();
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc486970fe54c20e74308cc5498148e2d2ea5247
 
 	public void Run() {
 
