@@ -11,10 +11,6 @@ public class Game {
 	private Card Room;
 
 	Board b = new Board();
-<<<<<<< HEAD
-
-=======
->>>>>>> bc486970fe54c20e74308cc5498148e2d2ea5247
 
 	public void Run() {
 
@@ -40,6 +36,16 @@ public class Game {
 		Deck.add(new Card("Wrench", CardTypes.Weapon));
 		Deck.add(new Card("Candlestick", CardTypes.Weapon));
 		Deck.add(new Card("Pistol", CardTypes.Weapon));
+		Deck.add(new Card("Hallway", CardTypes.Room));
+		Deck.add(new Card("Kicten", CardTypes.Room));
+		Deck.add(new Card("BillardsRoom", CardTypes.Room));
+		Deck.add(new Card("Ballroom", CardTypes.Room));
+		Deck.add(new Card("Study", CardTypes.Room));
+		Deck.add(new Card("Library", CardTypes.Room));
+		Deck.add(new Card("Bedroom", CardTypes.Room));
+		Deck.add(new Card("EntryHall", CardTypes.Room));
+		
+
 	}
 
 	private void generateFile() {
