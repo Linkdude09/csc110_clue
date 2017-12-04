@@ -1,6 +1,7 @@
 package csc110_clue;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Game {
 
@@ -11,6 +12,7 @@ public class Game {
 	private Card Room;
 
 	Board b = new Board();
+	public static Random gen = new Random();
 
 	public void Run() {
 
@@ -49,7 +51,15 @@ public class Game {
 	}
 
 	private void generateFile() {
-
+		int index = gen.nextInt(9)+12;
+		Room = Deck.get(index);
+		Deck.remove(index);
+		index = gen.nextInt(6)+6;
+		Weapon = Deck.get(index);
+		Deck.remove(index);
+		index = gen.nextInt(6);
+		Suspect = Deck.get(index);
+		Deck.remove(index);
 	}
 
 	public void movement() {
