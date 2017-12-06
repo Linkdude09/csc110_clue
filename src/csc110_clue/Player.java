@@ -3,13 +3,20 @@ package csc110_clue;
 import java.util.ArrayList;
 
 public class Player {
-	
-	CharNames Char;
-	
-	public DetectiveChecklist DCL = new DetectiveChecklist();
-	
-	ArrayList<Card> PlayerHand = new ArrayList<>();
-	
-	public int[][] position = new int[1][1];
+
+	public String name;
+
+	public CharNames Char;
+
+	public ArrayList<Card> PlayerHand = new ArrayList<>();
+
+	public String handToString() {
+		String RS = "Note: If you have a card then you know that the info that card presents is innocentin the crime \n";
+		RS += "You have the Following cards: \n";
+		for (int i = 0; i < PlayerHand.size(); i++) {
+			RS += PlayerHand.get(i).toString() + "\n";
+		}
+		return RS;
+	}
 
 }

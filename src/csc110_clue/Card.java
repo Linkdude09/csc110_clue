@@ -15,7 +15,7 @@ public class Card {
 	}
 
 	public String toString() {
-		return this.name + "is a " + this.type + " Card.";
+		return "" + this.type + " Card: " + this.name;
 	}
 
 	public CardTypes getType() {
