@@ -6,8 +6,6 @@ public class Player {
 
 	public String name;
 
-	public CharNames Char;
-
 	public ArrayList<Card> PlayerHand = new ArrayList<>();
 
 	public String handToString() {

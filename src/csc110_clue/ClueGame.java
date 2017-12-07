@@ -1,8 +1,6 @@
 package csc110_clue;
 
 import java.io.IOException;
-import java.util.ArrayList;
-
 import Interfaces.Consoleio;
 
 public class ClueGame {
