@@ -4,7 +4,7 @@ public class Card {
 
 	private String name;
 
-	private CardTypes type;
+	private final CardTypes type;
 
 	private boolean isSuspect;
 
